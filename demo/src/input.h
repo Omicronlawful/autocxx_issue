@@ -15,9 +15,15 @@
 
 class Goat {
 public:
-    Goat() : horns(0) {}
+    Goat(uint32_t horns_input) : horns(horns_input) {}
     void add_a_horn();
     std::string describe() const;
+    std::vector<std::vector<std::string>> test(){
+        std::vector<std::vector<std::string>> result = {{"hello", "world"}};
+        return result;
+    }
+    void test2(std::vector<std::string> test){
+    }
 private:
     uint32_t horns;
 };
